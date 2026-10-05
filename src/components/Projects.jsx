@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function Projects({ items }) {
   return (
     <section id="projects" className="content-section">
@@ -8,12 +10,12 @@ function Projects({ items }) {
 
       <div className="project-grid">
         {items.map((project) => (
-          <article className="project-card" key={project.title}>
+          <Link className="project-card" key={project.title} to={`/projects/${project.slug}`}>
             <div className="project-meta"><span>{project.number}</span><span>{project.type}</span></div>
             <h3>{project.title}</h3>
             <p>{project.description}</p>
-            <a href="mailto:nyamadorgk@gmail.com?subject=I%20want%20to%20discuss%20a%20project">Discuss a similar project <span>↗</span></a>
-          </article>
+            <span>View project <span>↗</span></span>
+          </Link>
         ))}
       </div>
     </section>

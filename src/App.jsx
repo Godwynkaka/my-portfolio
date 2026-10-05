@@ -1,55 +1,48 @@
 import './App.css'
-import About from './components/About'
-import Capabilities from './components/Capabilities'
-import Clients from './components/Clients'
+import { useEffect } from 'react'
+import { Route, Routes, useLocation } from 'react-router-dom'
 import Footer from './components/Footer'
 import Header from './components/Header'
-import Hero from './components/Hero'
-import Process from './components/Process'
-import Projects from './components/Projects'
-import Reviews from './components/Reviews'
+import Home from './pages/Home'
+import StudentDropoutPrediction from './pages/StudentDropoutPrediction'
+import StudentRetentionFlashcards from './pages/StudentRetentionFlashcards'
 
-const capabilities = [
-  'Web applications',
-  'Backend systems',
-  'AI & machine learning',
-  'Data-driven products',
-  'APIs & integrations',
-  'Linux & infrastructure',
-]
+const scrollPositions = {}
 
-const projects = [
-  {
-    number: '01',
-    title: 'Student Dropout Prediction Model',
-    type: 'Python / Machine learning',
-    description:
-      'A Python machine learning project that uses student data to identify dropout risk and support earlier, better-informed intervention.',
-  },
-  {
-    number: '02',
-    title: 'Student Retention Flashcards',
-    type: 'C# / Education tooling',
-    description:
-      'A C# flashcard application designed to help students strengthen retention through spaced review rather than last-minute cramming.',
-  },
-]
+function ScrollToTop() {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    const handleScroll = () => {
+      scrollPositions[pathname] = window.scrollY
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [pathname])
+
+  useEffect(() => {
+    const savedPosition = scrollPositions[pathname]
+
+    window.scrollTo(0, savedPosition ?? 0)
+  }, [pathname])
+
+  return null
+}
 
 function App() {
   return (
     <div className="portfolio-shell">
+      <ScrollToTop />
       <Header />
-
-      <main id="top">
-        <Hero />
-        <About />
-        <Capabilities items={capabilities} />
-        <Clients />
-        <Projects items={projects} />
-        <Reviews />
-        <Process />
-      </main>
-
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects/student-dropout-prediction" element={<StudentDropoutPrediction />} />
+        <Route path="/projects/student-retention-flashcards" element={<StudentRetentionFlashcards />} />
+      </Routes>
       <Footer />
     </div>
   )

@@ -2,12 +2,11 @@ function Reviews() {
   return (
     <section className="content-section review-section">
       <div className="section-heading">
-        <p className="eyebrow">A few good words</p>
-        <h2>The kind of collaboration I care about.</h2>
+        <p className="eyebrow">Trust takes time</p>
+        <h2>Reviews will be added as the work grows.</h2>
       </div>
       <div className="reviews">
-        <blockquote>“Godwin brings a rare mix of patience, curiosity, and technical depth to every problem.”<cite>— Client feedback</cite></blockquote>
-        <blockquote>“Clear communication, thoughtful execution, and no unnecessary drama.”<cite>— Project partner</cite></blockquote>
+        <blockquote>There are no published reviews yet. I will add verified feedback here with permission as projects are completed.<cite>— Honest status</cite></blockquote>
       </div>
     </section>
   )

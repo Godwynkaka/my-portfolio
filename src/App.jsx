@@ -21,24 +21,17 @@ const capabilities = [
 const projects = [
   {
     number: '01',
-    title: 'ML Fundamentals Portfolio',
-    type: 'Research / Learning platform',
+    title: 'Student Dropout Prediction Model',
+    type: 'Python / Machine learning',
     description:
-      'A focused learning space for practical machine learning work, from data handling and evaluation to clear, useful experiments.',
+      'A Python machine learning project that uses student data to identify dropout risk and support earlier, better-informed intervention.',
   },
   {
     number: '02',
-    title: 'Systems & Linux Practice',
-    type: 'Systems / Infrastructure',
+    title: 'Student Retention Flashcards',
+    type: 'C# / Education tooling',
     description:
-      'Hands-on work across shell scripting, SSH, networking, and infrastructure fundamentals that make software more dependable.',
-  },
-  {
-    number: '03',
-    title: 'Backend & Data Projects',
-    type: 'Backend / Product engineering',
-    description:
-      'Small applications and API-based builds that connect Python, databases, and deployment thinking to solve practical problems.',
+      'A C# flashcard application designed to help students strengthen retention through spaced review rather than last-minute cramming.',
   },
 ]
 

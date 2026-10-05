@@ -13,7 +13,7 @@ function Header() {
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
       </nav>
-      <a className="nav-cta" href="mailto:hello@example.com?subject=Let%27s%20work%20together">Hire me <span>↗</span></a>
+      <a className="nav-cta" href="mailto:nyamadorgk@gmail.com?subject=Let%27s%20work%20together">Hire me <span>↗</span></a>
     </header>
   )
 }

@@ -11,7 +11,7 @@ function Hero() {
           and a steady hand from the first sketch to the final deploy.
         </p>
         <div className="cta-group">
-          <a className="primary-btn" href="mailto:hello@example.com?subject=I%20have%20a%20project%20for%20you">
+          <a className="primary-btn" href="mailto:nyamadorgk@gmail.com?subject=I%20have%20a%20project%20for%20you">
             Start a project <span>↗</span>
           </a>
           <a className="secondary-btn" href="#projects">

@@ -1,11 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap');
 
 :root {
+  --color-ink: #5d625f;
+  --color-deep-ink: #697270;
+  --color-mist: #aebfc0;
+  --color-foam: #e1e9e8;
+  --color-paper: #f8f8f4;
+  --color-taupe: #a69d91;
+  --color-line: rgba(93, 98, 95, 0.22);
+  --color-eyebrow: #7d8782;
+  --color-muted: #89918d;
+  --color-body: #6b716e;
+  --color-soft-text: #727874;
+  --color-secondary-text: #737a76;
+  --color-caption: #747b77;
+  --color-project-link: #8b8175;
+  --color-heading-accent: #8c9591;
+  --color-mist-dark: #8f9793;
+  --color-dark-text: #f0f3f0;
+  --color-dark-muted: #d9e3e1;
+  --color-review: #dfe8e7;
+  --color-client: #e8eeee;
+  --color-process: #f7f7f2;
+  --color-image-bg: #cbd7d6;
+  --color-surface: rgba(250, 247, 240, 0.68);
+  --color-nav-surface: rgba(248, 248, 244, 0.88);
+  --color-shadow: rgba(93, 98, 95, 0.06);
+  --color-wave: rgba(174, 191, 192, 0.5);
+  --color-wave-shadow: rgba(174, 191, 192, 0.2);
+  --color-wave-shadow-soft: rgba(174, 191, 192, 0.12);
+  --color-button-shadow: rgba(93, 98, 95, 0.16);
+  --color-frame-shadow: rgba(174, 191, 192, 0.22);
+  --color-dark-border: rgba(225, 233, 232, 0.34);
+  --color-dark-fill: rgba(225, 233, 232, 0.12);
+  --color-footer-line: rgba(248, 248, 244, 0.55);
+  --color-background-glow: rgba(204, 216, 216, 0.35);
+  --color-background-end: #eef1ef;
+  --color-legacy-light: #f5f1eb;
+  --color-legacy-copy: #d9d1c7;
+  --color-legacy-eyebrow: #d2b48c;
+  --color-legacy-accent: #e7d4b4;
+  --color-legacy-heading: #f8fafc;
+  --color-legacy-blue-copy: #dbeafe;
+  --color-legacy-dark: #181612;
+  --color-legacy-deep: rgba(27, 27, 26, 0.8);
+  --color-legacy-border: rgba(180, 170, 160, 0.2);
+  --color-legacy-shadow: rgba(15, 15, 15, 0.28);
+  --color-legacy-blue-border: rgba(148, 163, 184, 0.18);
+  --color-legacy-blue-fill: rgba(15, 23, 42, 0.48);
+  --color-legacy-blue-card: rgba(15, 23, 42, 0.52);
   font-family: 'DM Sans', sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color: #5d625f;
-  background: #f8f8f4;
+  color: var(--color-ink);
+  background: var(--color-paper);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -26,8 +74,8 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background:
-    radial-gradient(circle at 84% 4%, rgba(204, 216, 216, 0.35), transparent 20rem),
-    linear-gradient(180deg, #f8f8f4 0%, #eef1ef 100%);
+    radial-gradient(circle at 84% 4%, var(--color-background-glow), transparent 20rem),
+    linear-gradient(180deg, var(--color-paper) 0%, var(--color-background-end) 100%);
 }
 
 #root {

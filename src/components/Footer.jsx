@@ -6,7 +6,7 @@ function Footer() {
         <h2>Have a good idea? Let’s make it useful.</h2>
       </div>
       <div className="contact-links">
-        <a href="mailto:hello@example.com">hello@example.com <span>↗</span></a>
+        <a href="mailto:nyamadorgk@gmail.com">nyamadorgk@gmail.com <span>↗</span></a>
       </div>
     </footer>
   )
